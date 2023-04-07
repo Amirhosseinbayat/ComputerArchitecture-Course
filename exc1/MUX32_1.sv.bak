@@ -1,0 +1,41 @@
+module mux2_1_assign
+     #(parameter width = 32)
+     (input      logic [width–1:0] a, b,
+	  input       logic             s,
+	  output      logic [width–1:0] out);
+	  
+	  assign out = s ? b : a;
+endmodule
+
+
+module mux2_1_if
+     #(parameter width = 32)
+     (input      logic [width–1:0] a, b,
+	  input       logic             s,
+	  output      logic [width–1:0] out);
+	  
+	  always @ (*)
+		begin
+		if (s)
+			out = b;
+		else
+			out = a;
+	  end
+endmodule
+
+
+
+module mux2_1_case
+     #(parameter width = 32)
+     (input      logic [width–1:0] a, b,
+	  input       logic             s,
+	  output      logic [width–1:0] out);
+	  
+	  always @ (*)
+		begin
+		case (s)
+		1:	out = b;
+		0:	out = a;
+		default: out = 1'bx;
+	  end
+endmodule

@@ -1,0 +1,103 @@
+.data
+    array:
+    .word 0x12121212, 0x23232323, 0x34343434, 0x4, 0x5
+.text
+.globl main
+
+khayam:  addi sp, sp,   -8     # Entry code
+      sw   ra, 0(sp)
+      sw   fp, 4(sp)
+      add  fp, sp,   zero  # End of entry code
+
+      # Compare n with 2
+      lw   t1, 8(fp)        # t0 holds the argument col n
+	  lw   t0, 12(fp)        # t0 holds the argument row r
+      li   t4, 1
+      beq  t1, t4, myexit   # ... skip the next two instructions
+	  beq  t0, t4, myexit   # ... skip the next two instructions
+	  beq  t1, t0, myexit   # ... skip the next two instructions
+      
+over: # n >= 2
+
+      # Calculate khayam(n - 1, r-1)
+      addi t0, t0,   -1     # Calculate n - 1
+	  addi t1, t1,   -1     # Calculate r - 1
+
+      # Set up to call khayam with argument n - 1
+                              # No registers need to be saved
+      addi sp, sp,   -4     # Allocate space for arguments
+      sw   t0, 0(sp)        # n - 1 is our argument
+	  addi sp, sp,   -4     # Allocate space for arguments
+      sw   t1, 0(sp)        # n - 1 is our argument
+      jal  khayam                # Call the khayam procedure
+
+      # Clean up after calling khayam with argument n - 1
+      addi sp, sp,   8      # Pop off the argument
+                              # No registers need to be restored
+
+      # a5 holds the result of khayam(n - 1)
+      add  t5, a5,   zero  # Put the result into t5
+
+      # Calculate khayam(n - 1, r )
+      lw   t1, 8(fp)        # t0 holds the argument n
+      lw   t0, 12(fp)        # t1 holds the argument r
+      addi t0, t0,   -1     # Calculate r - 1
+	  
+	  
+
+      # Set up to call khayam with argument n - 2
+      addi sp, sp,   -4     # Allocate space for saved register
+      sw   t5, 0(sp)        # Save t5 (the result of khayam(n - 1, r-1))
+      addi sp, sp,   -4     # Allocate space for arguments
+      sw   t0, 0(sp)        # n - 2 is our argument
+	  addi sp, sp,   -4     # Allocate space for arguments
+      sw   t1, 0(sp)        # n - 2 is our argument
+      jal  khayam                # Call the khayam procedure
+
+      # Clean up after calling khayam with argument n - 2
+      addi sp, sp,   8      # Pop off the argument
+      lw   t5, 0(sp)        # Restore t5 (the result of khayam(n - 1))
+      addi sp, sp,   4      # Deallocate space for saved register
+
+      # a5 holds the result of khayam(n - 2)
+      add  a5, t5,   a5    # Result is khayam(n - 1) + khayam(n - 2)
+
+exit: lw   ra, 0(sp)        # Exit code
+      lw   fp, 4(sp)
+      addi sp, sp,   8
+      jr   ra                # End of exit code
+
+myexit:
+      addi a5, zero, 1      # We're done with the recursion
+      j    exit               # Jump to the exit code
+main:
+
+	sw   fp, 4(sp)
+    add  fp, sp,   zero  # End of entry code
+
+    # Compare n with 2
+    addi    s10, zero, 6    # call n
+    addi    s11, zero, 1   # call row
+    
+myloop:
+	# Check if we've reached the end of the loop (i > size)
+	bgt s11, s10, endloop
+    addi sp, sp,   -4     # Allocate space for arguments
+    sw   s10, 0(sp) 
+	
+    addi sp, sp,   -4     # Allocate space for arguments
+    sw   s11, 0(sp)
+    jal     khayam
+    
+    addi a0 x0 1        # print_int ecall
+	mv a1 a5       # a1 = a5 to print
+	ecall
+    
+    addi a0 x0 11        # print_int ecall
+	addi a1 x0 32       # print space
+	ecall
+    
+    addi s11, s11, 1   # i++
+    j myloop
+    
+ endloop:

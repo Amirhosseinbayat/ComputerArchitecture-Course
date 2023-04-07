@@ -1,0 +1,29 @@
+.section .text
+.globl _start
+
+_start:
+    li a1, 2            # initialize divisor to 2
+    li a2, 1            # initialize is_prime to 1
+    li a3, 1
+    beqz a0, end        # check if number is zero
+    beq a0, a3, prime    # check if number is one
+loop:
+    blt a1, a0, test    # check divisibility until divisor is less than the number
+    j end
+test:
+    andi t0, a0, 1      # check if number is even
+    beqz t0, not_prime  # if number is even, it is not prime
+    addi a1, a1, 1      # increment divisor
+    addi a1, a1, 1      # increment divisor again
+    blt a1, a0, loop    # check divisibility until divisor is less than the number
+    j end
+not_prime:
+    li a2, 0            # set is_prime to 0 if number is not prime
+    j end
+
+prime:
+    li a2, 1            # if number is 1, it is prime
+    j end
+
+end:
+    mv a0, a2           # store result in a0

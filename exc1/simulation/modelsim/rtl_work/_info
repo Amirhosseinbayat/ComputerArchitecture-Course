@@ -1,0 +1,230 @@
+m255
+K4
+z2
+!s11f vlog 2020.4 2020.10, Oct 13 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d//vboxsvr/University/Architecture/exc1/simulation/modelsim
+T_opt
+!s110 1678478581
+Vk^n;`TU6hQ1V5`b`F]fkH2
+Z1 04 10 4 work mux32_1_tb fast 0
+=1-0800274adcc8-640b8cf5-12d-94c
+o-quiet -auto_acc_if_foreign -work work
+Z2 tCvgOpt 0
+n@_opt
+Z3 OL;O;2020.4;71
+R0
+T_opt1
+!s110 1678478611
+VoJBAa[L9hESb5Yh;of:UU2
+R1
+=1-0800274adcc8-640b8d13-1c-a34
+o-quiet -auto_acc_if_foreign -work work +acc
+R2
+n@_opt1
+R3
+vmux16
+Z4 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z5 !s110 1678478555
+!i10b 1
+!s100 m^1OHB1lbDDdUl7Bz?@Z91
+Z6 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IEX[<nUjzj1hIUgE=Y^hV72
+S1
+R0
+Z7 w1678474812
+Z8 8//VBOXSVR/University/Architecture/exc1/MUX32_1.sv
+Z9 F//VBOXSVR/University/Architecture/exc1/MUX32_1.sv
+!i122 1
+L0 85 12
+Z10 VDg1SIo80bB@j0V0VzS_@n1
+Z11 OL;L;2020.4;71
+r1
+!s85 0
+31
+Z12 !s108 1678478555.000000
+Z13 !s107 //VBOXSVR/University/Architecture/exc1/MUX32_1.sv|
+Z14 !s90 -reportprogress|300|-work|work|//VBOXSVR/University/Architecture/exc1/MUX32_1.sv|
+!i113 0
+Z15 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+vmux2_assign
+R4
+R5
+!i10b 1
+!s100 2M=k;KCJ8a8zQXZcDUDH13
+R6
+IGhk6koLaL;zNT6DU<@AK03
+S1
+R0
+R7
+R8
+R9
+!i122 1
+L0 1 8
+R10
+R11
+r1
+!s85 0
+31
+R12
+R13
+R14
+!i113 0
+R15
+R2
+vmux2_case
+R4
+R5
+!i10b 1
+!s100 kNajKC18cD=G_n]_k7lAk1
+R6
+I^FeV9QN^n?K[gkPe6_k[Y0
+S1
+R0
+R7
+R8
+R9
+!i122 1
+L0 28 15
+R10
+R11
+r1
+!s85 0
+31
+R12
+R13
+R14
+!i113 0
+R15
+R2
+vmux2_if
+R4
+R5
+!i10b 1
+!s100 ahTjU3YaTa@6BalmSoON;0
+R6
+IlK2_]Pdb4XXRmRSdY@X3>3
+S1
+R0
+R7
+R8
+R9
+!i122 1
+L0 11 14
+R10
+R11
+r1
+!s85 0
+31
+R12
+R13
+R14
+!i113 0
+R15
+R2
+vmux32_1_32bit
+R4
+R5
+!i10b 1
+!s100 5Sk=ec_fk<Ab[ID7lD86e0
+R6
+I7RGkXE1k^CkkUHZ<z?iIj1
+S1
+R0
+R7
+R8
+R9
+!i122 1
+L0 98 13
+R10
+R11
+r1
+!s85 0
+31
+R12
+R13
+R14
+!i113 0
+R15
+R2
+vmux32_1_tb
+R4
+R5
+!i10b 1
+!s100 zVNnMLkk?6Pg9[_H`4<g;3
+R6
+IbW5bL@LY2cCY5X5MV1j6B3
+S1
+R0
+w1678478332
+8//VBOXSVR/University/Architecture/exc1/MUX32_1_tb.sv
+F//VBOXSVR/University/Architecture/exc1/MUX32_1_tb.sv
+!i122 2
+L0 3 28
+R10
+R11
+r1
+!s85 0
+31
+R12
+!s107 //VBOXSVR/University/Architecture/exc1/MUX32_1_tb.sv|
+!s90 -reportprogress|300|-work|work|//VBOXSVR/University/Architecture/exc1/MUX32_1_tb.sv|
+!i113 0
+R15
+R2
+vmux4
+R4
+R5
+!i10b 1
+!s100 od^6O@SgnVznHSGRRBW=a0
+R6
+IZmeBTgXeF:VGSzAY?:KVB3
+S1
+R0
+R7
+R8
+R9
+!i122 1
+L0 45 12
+R10
+R11
+r1
+!s85 0
+31
+R12
+R13
+R14
+!i113 0
+R15
+R2
+vmux8
+R4
+R5
+!i10b 1
+!s100 9elae3ZDVRA6fL]kW6Qfa3
+R6
+I2VekZbee]bTO6aIDHLA6I0
+S1
+R0
+R7
+R8
+R9
+!i122 1
+L0 59 12
+R10
+R11
+r1
+!s85 0
+31
+R12
+R13
+R14
+!i113 0
+R15
+R2
