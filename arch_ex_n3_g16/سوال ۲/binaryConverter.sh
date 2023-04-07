@@ -22,7 +22,7 @@ function rTypeToBinary () {
 	echo "$TYPE"
 	for i in `cat ../README.md | grep 0x | grep "${TYPE}" |  awk '{print $2}' | sed 's/^..//g' | sed 's/[a-z]/\U&/g'`
 	do 
-		echo -n "$i: " 
+		echo -n "| $i " 
 		nob=`echo "obase=2; ibase=16; $i" | bc |wc -c`
 		#fill32Bit
 		#echo "obase=2; ibase=16; $i" | bc 
@@ -36,10 +36,10 @@ function iTypeToBinary () {
 	echo "$TYPE"
 	for i in `cat ../README.md | grep 0x | grep $TYPE| awk '{print $2}' | sed 's/^..//g' | sed 's/[a-z]/\U&/g'`
 	do 
-		echo -n "$i: " 
+		echo -n "| $i " 
 		nob=`echo "obase=2; ibase=16; $i" | bc |wc -c`
 		( fill32Bit && echo "obase=2; ibase=16; $i" | bc ) | sed 's/.\{12\}/& | /' | sed 's/.\{20\}/& | /' | sed 's/.\{26\}/& | /g' | sed 's/.\{34\}/& | /g' | sed 's/^/| /g' | sed 's/$/ |/g'	
-       	done | tee "/tmp/$TYPE"
+       	done 
 }
 function sbTypeToBinary () {
 	
@@ -47,11 +47,10 @@ function sbTypeToBinary () {
 	echo "$TYPE"
 	for i in `cat ../README.md | grep 0x | grep $TYPE| awk '{print $2}' | sed 's/^..//g' | sed 's/[a-z]/\U&/g'`
 	do 
-		echo -n "$i: " 
+		echo -n "| $i " 
 		nob=`echo "obase=2; ibase=16; $i" | bc |wc -c`
-		fill32Bit
-		echo "obase=2; ibase=16; $i" | bc 
-       	done | tee "/tmp/SB-Type"
+		( fill32Bit && echo "obase=2; ibase=16; $i" | bc ) | sed 's/.\{7\}/& | /' | sed 's/.\{15\}/& | /' | sed 's/.\{23\}/& | /g' | sed 's/.\{29\}/& | /g' | sed 's/.\{37\}/& | /g' | sed 's/^/| /g' | sed 's/$/ |/g'	
+       	done 
 }
 function ujTypeToBinary () {
 	
@@ -59,11 +58,10 @@ function ujTypeToBinary () {
 	echo "$TYPE"
 	for i in `cat ../README.md | grep 0x | grep $TYPE| awk '{print $2}' | sed 's/^..//g' | sed 's/[a-z]/\U&/g'`
 	do 
-		echo -n "$i: " 
+		echo -n "| $i | " 
 		nob=`echo "obase=2; ibase=16; $i" | bc |wc -c`
-		fill32Bit
-		echo "obase=2; ibase=16; $i" | bc 
-       	done | tee "/tmp/UJ-Type"
+		( fill32Bit && echo "obase=2; ibase=16; $i" | bc ) | sed 's/.\{20\}/& | /' | sed 's/.\{28\}/& | /' | sed 's/^/| /g' | sed 's/$/ |/g'	
+       	done
 }
 rTypeToBinary 
 iTypeToBinary
