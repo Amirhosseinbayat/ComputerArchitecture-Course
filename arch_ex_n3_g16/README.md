@@ -17,14 +17,14 @@
 | 0xfff50513 | 19 | I-Type | Immediate |
 | 0xfddff0ef | 111 | U/J-Type |  |
 | 0x00a00433 | 51 | R-Type | Register-Only |
-| 0x00c12503 | 3 | I-Type | Immediate |
+| 0x00c12503 | 3 | I-Type | Base |
 | 0xffe50513 | 19 | I-Type | Immediate |
 | 0xfcdff0ef | 111 | U/J-Type |  |
 | 0x00a004b3 | 51 | R-Type | Register-Only |
 | 0x00848433 | 51 | R-Type | Register-Only |
 | 0x00040533 | 51 | R-Type | Register-Only |
-| 0x00812083 | 3 | I-Type | Immediate |
-| 0x00412403 | 3 | I-Type | Immediate |
-| 0x00012483 | 3 | I-Type | Immediate |
+| 0x00812083 | 3 | I-Type | Base |
+| 0x00412403 | 3 | I-Type | Base |
+| 0x00012483 | 3 | I-Type | Base |
 | 0x01010113 | 19 | I-Type | Immediate |
 | 0x00008067 | 103 | I-Type |  |
