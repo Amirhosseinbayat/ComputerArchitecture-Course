@@ -15,11 +15,11 @@
 | 0x00812223 | 35 | S/B-Type |  |
 | 0x00912023 | 35 | S/B-Type |  |
 | 0xfff50513 | 19 | I-Type | Immediate |
-| 0xfddff0ef | 111 | U/J-Type |  |
+| 0xfddff0ef | 111 | U/J-Type | PC-Relative |
 | 0x00a00433 | 51 | R-Type | Register-Only |
 | 0x00c12503 | 3 | I-Type | Base |
 | 0xffe50513 | 19 | I-Type | Immediate |
-| 0xfcdff0ef | 111 | U/J-Type |  |
+| 0xfcdff0ef | 111 | U/J-Type | PC-Relative |
 | 0x00a004b3 | 51 | R-Type | Register-Only |
 | 0x00848433 | 51 | R-Type | Register-Only |
 | 0x00040533 | 51 | R-Type | Register-Only |
