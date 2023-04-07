@@ -10,10 +10,10 @@
 | 0x00a2c463 | 99 | S/B-Type |  |
 | 0x00008067 | 103 | I-Type |  |
 | 0xff010113 | 19 | I-Type | Immediate |
-| 0x00a12623 | 35 | S/B-Type |  |
-| 0x00112423 | 35 | S/B-Type |  |
-| 0x00812223 | 35 | S/B-Type |  |
-| 0x00912023 | 35 | S/B-Type |  |
+| 0x00a12623 | 35 | S/B-Type | Base |
+| 0x00112423 | 35 | S/B-Type | Base |
+| 0x00812223 | 35 | S/B-Type | Base |
+| 0x00912023 | 35 | S/B-Type | Base |
 | 0xfff50513 | 19 | I-Type | Immediate |
 | 0xfddff0ef | 111 | U/J-Type | PC-Relative |
 | 0x00a00433 | 51 | R-Type | Register-Only |
