@@ -5,7 +5,7 @@
 ## سوال ۲
 الف)
 | machine code | OP code | Type | addressing mode | Assembly instruction |
-|---|---|---|---|
+|---|---|---|---|---|
 | 0x00100293 | 19 | I-Type | Immediate     |  | 
 | 0x00a2c463 | 99 | S/B-Type | PC-Relative |  |
 | 0x00008067 | 103 | I-Type | Base         |  |
