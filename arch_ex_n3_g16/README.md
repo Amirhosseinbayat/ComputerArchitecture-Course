@@ -151,8 +151,7 @@ sw t2,4(sp)
 addi t2,zero,10
 sw t2,0(sp)
 
-add s3,zero,sp	# to store the address of arr 
-add t1,zero,sp	# arr[]
+add s3,zero,sp	# to store the address of arr[]
 addi s1,zero,1	# to check n with one
 
 MAIN: 
