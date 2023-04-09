@@ -119,3 +119,8 @@ int nth_fibo(int n)
   return t2;
 }
 ~~~
+
+## سوال ۳
+
+
+
