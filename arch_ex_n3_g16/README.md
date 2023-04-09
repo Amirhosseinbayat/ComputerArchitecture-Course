@@ -1,6 +1,24 @@
 
 # تمرین ۳
 
+## سوال ۱
+الف)
+| Code | Type | Addressing Method |
+|---|---|---|
+| L1 : addi t3, a2, 12 | I-Type | Immediate Addressing |
+| xori s6, a0, 14 | I-Type | Immediate Addressing |
+| jal L2 | U/J-Type | PC-Relative Addressing |
+| sw s5, 4(a0) | S/B-Type | Base Addressing |
+| j L1 | U/J-Type | PC-Relative Addressing |
+| L2 : beq t3, a4, L3 | S/B-Type | PC-Relative Addressing |
+| lui t4, 0xFF | U/J-Type | Immediate Addressing |
+| L3 : lw s4, 8(t1) | I-Type | Base Addressing |
+| sub t3, t2, t1 | R-Type | Register-Only |
+| jr ra | R-Type | Register-Only Addressing |
+
+
+
+
 
 ## سوال ۲
 الف)
