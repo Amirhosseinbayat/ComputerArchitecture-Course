@@ -10,10 +10,10 @@
 | 0x00a2c463 | 99 | S/B-Type | PC-Relative | blt t0,a0,L1 |
 | 0x00008067 | 103 | I-Type | Base         | jalr zero,ra,0 |
 | 0xff010113 | 19 | I-Type | Immediate     | addi sp,sp,-16 | L1 |
-| 0x00a12623 | 35 | S/B-Type | Base        | sw a0,12(t0) |
-| 0x00112423 | 35 | S/B-Type | Base        | sw ra,8(t0) |
-| 0x00812223 | 35 | S/B-Type | Base        | sw s0,4(t0) |
-| 0x00912023 | 35 | S/B-Type | Base        | sw s1,0(t0) |
+| 0x00a12623 | 35 | S/B-Type | Base        | sw a0,12(sp) |
+| 0x00112423 | 35 | S/B-Type | Base        | sw ra,8(sp) |
+| 0x00812223 | 35 | S/B-Type | Base        | sw s0,4(sp) |
+| 0x00912023 | 35 | S/B-Type | Base        | sw s1,0(sp) |
 | 0xfff50513 | 19 | I-Type | Immediate     | addi a0,a0,-1 |
 | 0xfddff0ef | 111 | U/J-Type | PC-Relative| jal ra,L0 |
 | 0x00a00433 | 51 | R-Type | Register-Only | add s0,zero,a0 |
@@ -62,10 +62,10 @@
 | hex      | imm     | rs2   | rs1   |funct3| imm  |    op   | Assembly |
 | ---      | ---     | ---   | ---   | --- | ---   | ---     | ---|
 | 00A2C463 | 0000000 | 01010 | 00101 | 100 | 01000 | 1100011 | blt x5,x10,8 |
-| 00A12623 | 0000000 | 01010 | 00010 | 010 | 01100 | 0100011 | sw x10,12(x5)|
-| 00112423 | 0000000 | 00001 | 00010 | 010 | 01000 | 0100011 | sw x1,8(x5)|
-| 00812223 | 0000000 | 01000 | 00010 | 010 | 00100 | 0100011 | sw x8,4(x5)|
-| 00912023 | 0000000 | 01001 | 00010 | 010 | 00000 | 0100011 | sw x9,0(x5)|
+| 00A12623 | 0000000 | 01010 | 00010 | 010 | 01100 | 0100011 | sw x10,12(x2)|
+| 00112423 | 0000000 | 00001 | 00010 | 010 | 01000 | 0100011 | sw x1,8(x2)|
+| 00812223 | 0000000 | 01000 | 00010 | 010 | 00100 | 0100011 | sw x8,4(x2)|
+| 00912023 | 0000000 | 01001 | 00010 | 010 | 00000 | 0100011 | sw x9,0(x2)|
 
 **U/J-Type**
 | hex | imm | rd | op | Assembly |
@@ -79,10 +79,10 @@ L0: addi t0,zero,1
 blt t0,a0,L1
 jalr zero,ra,0
 L1: addi sp,sp,-16
-sw a0,12(t0)
-sw ra,8(t0)
-sw s0,4(t0)
-sw s1,0(t0)
+sw a0,12(sp)
+sw ra,8(sp)
+sw s0,4(sp)
+sw s1,0(sp)
 addi a0,a0,-1
 jal ra,L0 
 add s0,zero,a0
@@ -96,6 +96,5 @@ lw ra,8(sp)
 lw s0,4(sp)
 lw s1,0(sp)
 addi sp,sp,16
-jalr zero,ra,0
-~~~
+jalr zero,ra,0~~~
 
