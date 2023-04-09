@@ -232,4 +232,6 @@ IS_ODD:
 
 END:
 ~~~
-
+خروجی نهایی: 
+شروع ارایه از 0x7fffffec تا 0x7fffffc8
+![Uploading image.png…]()
