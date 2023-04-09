@@ -6,7 +6,7 @@
 الف)
 | machine code | OP code | Type | addressing mode | Assembly instruction | Label |
 |---|---|---|---|---|---|
-| 0x00100293 | 19 | I-Type | Immediate     | addi t0,zero,1 | 
+| 0x00100293 | 19 | I-Type | Immediate     | addi t0,zero,1 | L0 |
 | 0x00a2c463 | 99 | S/B-Type | PC-Relative | bne t0,a0,L1 |
 | 0x00008067 | 103 | I-Type | Base         | jalr zero,ra,0 |
 | 0xff010113 | 19 | I-Type | Immediate     | addi sp,sp,-16 | L1 |
@@ -15,7 +15,7 @@
 | 0x00812223 | 35 | S/B-Type | Base        | sw s0,4(t0) |
 | 0x00912023 | 35 | S/B-Type | Base        | sw s1,(t0) |
 | 0xfff50513 | 19 | I-Type | Immediate     | addi a0,a0,-1 |
-| 0xfddff0ef | 111 | U/J-Type | PC-Relative| jal ra,-36 |
+| 0xfddff0ef | 111 | U/J-Type | PC-Relative| jal ra,L0 |
 | 0x00a00433 | 51 | R-Type | Register-Only | add s0,zero,a0 |
 | 0x00c12503 | 3 | I-Type | Base           | lw a0,12(sp) |
 | 0xffe50513 | 19 | I-Type | Immediate     | addi a0,a0,-2 |
