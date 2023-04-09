@@ -33,10 +33,10 @@ MAIN:
 FOR:	
 	bge s2,s0,DONE		# branch if i >= arr_size
 	lw a0,8(sp)		# a0 = arr[i]
-	jal IS_EVEN
+	jal ra,IS_EVEN
 IF:	beq a0,zero,ELSE
 	lw a0,8(sp)		# a0 = arr[i]
-	lw a1,(sp)		# a1 = arr[i-2]
+	lw a1,0(sp)		# a1 = arr[i-2]
 	add t3,a0,a1		# t3 = arr[i] + arr [i-2]
 	sw t3,8(sp)		# arr[i] += arr[i-2]
 	j FI
@@ -64,13 +64,17 @@ IS_EVEN:
 	jr ra
 
 	E_CHECK_ONE:
-	bne a0,s0,E_NONE
+	bne a0,s1,E_NONE
 	addi a0,zero,0
 	jr ra
 
 	E_NONE:
 	addi a0,a0,-1
+	addi sp,sp,-4
+	sw ra,0(sp)
 	jal ra,IS_ODD
+	lw ra,0(sp)
+	addi sp,sp,8
 	jr ra
 
 
@@ -81,13 +85,17 @@ IS_ODD:
 	jr ra
 
 	O_CHECK_ONE:
-	bne a0,s0,O_NONE
+	bne a0,s1,O_NONE
 	addi a0,zero,1
 	jr ra
 
 	O_NONE:
 	addi a0,a0,-1
+	addi sp,sp,-4
+	sw ra,0(sp)
 	jal ra,IS_EVEN
+	lw ra,0(sp)
+	addi sp,sp,8
 	jr ra
 
 END:
