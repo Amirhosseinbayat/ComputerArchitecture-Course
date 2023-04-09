@@ -30,7 +30,7 @@
 | 0x00008067 | 103 | I-Type | Base         | jalr zero,ra,0 |
 
 
-ب)
+ب) تابع ورودی a0 را میگیرید و جمله a0 ام از دنباله فیبوناچی را برمیگرداند.
 
 **R-Type**
 | hex      | funct7  |  rs2  |  rs1  |funct3|  rd  |   op    | Assembly |
@@ -73,6 +73,7 @@
 | FDDFF0EF | 11111101110111111111 | 00001 | 1101111 | jal ra,-36 |
 | FCDFF0EF | 11111100110111111111 | 00001 | 1101111 | jal ra,-52 |
 
+**ASSEMBLY:**
 ~~~
 addi a0,zero,4
 L0: addi t0,zero,1
@@ -96,5 +97,25 @@ lw ra,8(sp)
 lw s0,4(sp)
 lw s1,0(sp)
 addi sp,sp,16
-jalr zero,ra,0~~~
+jalr zero,ra,0
+~~~
 
+**C:**
+~~~
+int nth_fibo(int n)
+{
+  int t1 = 0, t2 = 1, nextTerm = 0, i;
+  if(n == 0 || n == 1) 
+    return n; 
+  else
+    nextTerm = t1 + t2;
+  for (i = 3; i <= n; ++i)
+  {
+    t1 = t2;
+    t2 = nextTerm;
+    nextTerm = t1 + t2;
+  }
+
+  return t2;
+}
+~~~
