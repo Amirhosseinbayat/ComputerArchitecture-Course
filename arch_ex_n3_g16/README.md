@@ -128,6 +128,8 @@ int nth_fibo(int n)
 addi s0,zero,10		# arr_size
 addi sp,sp,-40
 
+# array initiation: {10,9,8,7,6,5,4,3,2,1}
+
 addi t2,zero,1
 sw t2,36(sp)
 addi t2,zero,2
