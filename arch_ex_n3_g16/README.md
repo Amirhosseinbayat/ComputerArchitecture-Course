@@ -232,6 +232,8 @@ IS_ODD:
 
 END:
 ~~~
+
 خروجی نهایی: 
 شروع ارایه از 0x7fffffec تا 0x7fffffc8
+
 ![image](https://user-images.githubusercontent.com/77579794/230790398-4809671d-3828-48e0-9078-fb8cba199f81.png)
