@@ -46,6 +46,7 @@ ELSE:
 	FOR_2:			# for (int i=a1 ; i > 0 ; i++ ) a0+=a0;
 		ble t4,zero,ROF_2
 		add a0,a0,a0
+		addi t4,t4,1
 		j FOR_2
 	ROF_2:
 	sw a0,8(sp)		# arr[i]*arr[i-1] => arr[i]
@@ -75,7 +76,7 @@ IS_EVEN:
 	sw ra,0(sp)
 	jal ra,IS_ODD
 	lw ra,0(sp)
-	addi sp,sp,8
+	addi sp,sp,4
 	jr ra
 
 
@@ -96,7 +97,7 @@ IS_ODD:
 	sw ra,0(sp)
 	jal ra,IS_EVEN
 	lw ra,0(sp)
-	addi sp,sp,8
+	addi sp,sp,4
 	jr ra
 
 END:
