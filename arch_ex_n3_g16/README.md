@@ -16,6 +16,34 @@
 | sub t3, t2, t1 | R-Type | Register-Only |
 | jr ra | R-Type | Register-Only Addressing |
 
+<hr>
+ب)
+
+**R-Type**
+| Assembly | funct7 |  rs2  |  rs1  |funct3|  rd  |   op    | hex      |
+| --- | --- | --- | --- | ---| ---   | --- | ---   |
+| sub t3, t2, t1|  32 | 6 | 7 | 0 | 28 | 51 |-----|
+
+
+**I-Type**
+| Assembly      |      imm     | rs1  |funct3|   rd  |   op    | Hex |
+| ---      | ---          | ---   | --- | ---   | ---     | ---|
+| L1 : addi t3, a2, 12 | 12 | 12 | 0 | 28 | 19 | ----- |
+| xori s6, a0, 14 | 14 | 10 | ----- | 00000 | 1100111 | -------- |
+| L3 : lw s4, 8(t1) | 8 | 6 | 2 | 20 | 3 | ------- |
+
+
+**S/B-Type**
+| Assembly      | imm     | rs2   | rs1   |funct3| imm  |    op   | Hex |
+| ---      | ---     | ---   | ---   | --- | ---   | ---     | ---|
+| sw s5, 4(a0) | 0000000 | 21 | 10 | 2 | 00100 | 35 | 0x----- |
+| L2 : beq t3, a4, L3 | 0000000 | 14 | 28 | 0 | 01000 | 99 | 0x-----|
+
+
+**U/J-Type**
+| Assembly | imm | rd | op | Hex |
+| --- | --- | --- | ---| ---|
+| lui t4, 0xFF | 0xFF | 00001 | 29 | 0x---- |
 
 
 
