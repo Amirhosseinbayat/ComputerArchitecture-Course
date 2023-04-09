@@ -46,12 +46,13 @@ ELSE:
 	FOR_2:			# for (int i=a1 ; i > 0 ; i++ ) a0+=a0;
 		ble t4,zero,ROF_2
 		add a0,a0,a0
+		j FOR_2
 	ROF_2:
 	sw a0,8(sp)		# arr[i]*arr[i-1] => arr[i]
 FI:
 	addi sp,sp,4		
 	addi,s2,s2,1
-	
+	j FOR	
 DONE:
 
 j END
