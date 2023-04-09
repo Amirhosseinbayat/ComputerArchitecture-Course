@@ -72,3 +72,30 @@
 | --- | --- | --- | ---| ---|
 | FDDFF0EF | 11111101110111111111 | 00001 | 1101111 | jal ra,-36 |
 | FCDFF0EF | 11111100110111111111 | 00001 | 1101111 | jal ra,-52 |
+
+~~~
+addi a0,zero,4
+L0: addi t0,zero,1
+bne t0,a0,L1
+jalr zero,ra,0
+L1: addi sp,sp,-16
+sw a0,12(t0)
+sw ra,8(t0)
+sw s0,4(t0)
+sw s1,0(t0)
+addi a0,a0,-1
+jal ra,L0 
+add s0,zero,a0
+lw a0,12(sp)
+addi a0,a0,-2
+jal ra,L0
+add s1,zero,a0
+add s0,s1,s0
+add a0,s0,zero
+lw ra,8(sp)
+lw s0,4(sp)
+lw s1,0(sp)
+addi sp,sp,16
+jalr zero,ra,0
+~~~
+
