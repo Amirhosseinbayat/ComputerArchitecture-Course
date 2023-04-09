@@ -7,7 +7,7 @@
 | machine code | OP code | Type | addressing mode | Assembly instruction | Label |
 |---|---|---|---|---|---|
 | 0x00100293 | 19 | I-Type | Immediate     | addi t0,zero,1 | L0 |
-| 0x00a2c463 | 99 | S/B-Type | PC-Relative | bne t0,a0,L1 |
+| 0x00a2c463 | 99 | S/B-Type | PC-Relative | blt t0,a0,L1 |
 | 0x00008067 | 103 | I-Type | Base         | jalr zero,ra,0 |
 | 0xff010113 | 19 | I-Type | Immediate     | addi sp,sp,-16 | L1 |
 | 0x00a12623 | 35 | S/B-Type | Base        | sw a0,12(t0) |
@@ -61,7 +61,7 @@
 
 | hex      | imm     | rs2   | rs1   |funct3| imm  |    op   | Assembly |
 | ---      | ---     | ---   | ---   | --- | ---   | ---     | ---|
-| 00A2C463 | 0000000 | 01010 | 00101 | 100 | 01000 | 1100011 | bne x5,x10,8 |
+| 00A2C463 | 0000000 | 01010 | 00101 | 100 | 01000 | 1100011 | blt x5,x10,8 |
 | 00A12623 | 0000000 | 01010 | 00010 | 010 | 01100 | 0100011 | sw x10,12(x5)|
 | 00112423 | 0000000 | 00001 | 00010 | 010 | 01000 | 0100011 | sw x1,8(x5)|
 | 00812223 | 0000000 | 01000 | 00010 | 010 | 00100 | 0100011 | sw x8,4(x5)|
@@ -76,7 +76,7 @@
 ~~~
 addi a0,zero,4
 L0: addi t0,zero,1
-bne t0,a0,L1
+blt t0,a0,L1
 jalr zero,ra,0
 L1: addi sp,sp,-16
 sw a0,12(t0)
