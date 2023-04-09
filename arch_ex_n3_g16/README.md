@@ -4,12 +4,12 @@
 
 ## سوال ۲
 الف)
-| machine code | OP code | Type | addressing mode | Assembly instruction |
-|---|---|---|---|---|
+| machine code | OP code | Type | addressing mode | Assembly instruction | Label |
+|---|---|---|---|---|---|
 | 0x00100293 | 19 | I-Type | Immediate     | addi t0,zero,1 | 
-| 0x00a2c463 | 99 | S/B-Type | PC-Relative | bne t0,a0,8 |
+| 0x00a2c463 | 99 | S/B-Type | PC-Relative | bne t0,a0,L1 |
 | 0x00008067 | 103 | I-Type | Base         | jalr zero,ra,0 |
-| 0xff010113 | 19 | I-Type | Immediate     | addi sp,sp,-16 |
+| 0xff010113 | 19 | I-Type | Immediate     | addi sp,sp,-16 | L1 |
 | 0x00a12623 | 35 | S/B-Type | Base        | sw a0,12(t0) |
 | 0x00112423 | 35 | S/B-Type | Base        | sw ra,8(t0) |
 | 0x00812223 | 35 | S/B-Type | Base        | sw s0,4(t0) |
