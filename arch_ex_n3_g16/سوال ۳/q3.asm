@@ -1,7 +1,7 @@
-
-
 addi s0,zero,10		# arr_size
 addi sp,sp,-40
+
+# array initiation: {10,9,8,7,6,5,4,3,2,1}
 
 addi t2,zero,1
 sw t2,36(sp)
@@ -24,7 +24,7 @@ sw t2,4(sp)
 addi t2,zero,10
 sw t2,0(sp)
 
-add t1,zero,sp	# arr[]
+add s3,zero,sp	# to store the address of arr[]
 addi s1,zero,1	# to check n with one
 
 MAIN: 
@@ -32,26 +32,28 @@ MAIN:
 	addi s2,zero,2 		# i = 2 
 FOR:	
 	bge s2,s0,DONE		# branch if i >= arr_size
-	lw a0,8(sp)		# a0 = arr[i]
+	lw a0,8(s3)		# a0 = arr[i]
 	jal ra,IS_EVEN
 IF:	beq a0,zero,ELSE
-	lw a0,8(sp)		# a0 = arr[i]
-	lw a1,0(sp)		# a1 = arr[i-2]
+	lw a0,8(s3)		# a0 = arr[i]
+	lw a1,0(s3)		# a1 = arr[i-2]
 	add t3,a0,a1		# t3 = arr[i] + arr [i-2]
-	sw t3,8(sp)		# arr[i] += arr[i-2]
+	sw t3,8(s3)		# arr[i] += arr[i-2]
 	j FI
 ELSE:
-	lw a1,4(sp)		# a1 = arr[i-1]
-	add t4,zero,a1		# i = a1
-	FOR_2:			# for (int i=a1 ; i > 0 ; i++ ) a0+=a0;
+	lw a0,8(s3)		# a0 = arr[i]
+	add t5,zero,a0	
+	lw a1,4(s3)		# a1 = arr[i-1]
+	addi t4,a1,-1		# i = a1-1
+	FOR_2:			# for (int i=a1-1 ; i > 0 ; i++ ) a0+=a0;
 		ble t4,zero,ROF_2
-		add a0,a0,a0
+		add a0,a0,t5
 		addi t4,t4,-1
 		j FOR_2
 	ROF_2:
-	sw a0,8(sp)		# arr[i]*arr[i-1] => arr[i]
+	sw a0,8(s3)		# arr[i]*arr[i-1] => arr[i]
 FI:
-	addi sp,sp,4		
+	addi s3,s3,4		
 	addi,s2,s2,1
 	j FOR	
 DONE:
