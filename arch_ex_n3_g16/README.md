@@ -19,7 +19,7 @@
 | 0x00a00433 | 51 | R-Type | Register-Only | add s0,zero,a0 |
 | 0x00c12503 | 3 | I-Type | Base           | lw a0,12(sp) |
 | 0xffe50513 | 19 | I-Type | Immediate     | addi a0,a0,-2 |
-| 0xfcdff0ef | 111 | U/J-Type | PC-Relative| jal ra,-52 |
+| 0xfcdff0ef | 111 | U/J-Type | PC-Relative| jal ra,L0 |
 | 0x00a004b3 | 51 | R-Type | Register-Only | add s1,zero,a0 |
 | 0x00848433 | 51 | R-Type | Register-Only | add s0,s1,s0 |
 | 0x00040533 | 51 | R-Type | Register-Only | add a0,s0,zero |
