@@ -6,27 +6,27 @@
 الف)
 | machine code | OP code | Type | addressing mode | Assembly instruction |
 |---|---|---|---|---|
-| 0x00100293 | 19 | I-Type | Immediate     | addi x5,x0,1 | 
-| 0x00a2c463 | 99 | S/B-Type | PC-Relative | bne x5,x10,8 |
+| 0x00100293 | 19 | I-Type | Immediate     | addi t0,zero,1 | 
+| 0x00a2c463 | 99 | S/B-Type | PC-Relative | bne t0,a0,8 |
 | 0x00008067 | 103 | I-Type | Base         | jalr zero,ra,0 |
-| 0xff010113 | 19 | I-Type | Immediate     | addi x2,x2,-16 |
-| 0x00a12623 | 35 | S/B-Type | Base        | sw x10,12(x5) |
-| 0x00112423 | 35 | S/B-Type | Base        | sw x1,8(x5) |
-| 0x00812223 | 35 | S/B-Type | Base        | sw x8,4(x5) |
-| 0x00912023 | 35 | S/B-Type | Base        | sw x9,(x5) |
-| 0xfff50513 | 19 | I-Type | Immediate     | addi x10,x10,-1 |
+| 0xff010113 | 19 | I-Type | Immediate     | addi sp,sp,-16 |
+| 0x00a12623 | 35 | S/B-Type | Base        | sw a0,12(t0) |
+| 0x00112423 | 35 | S/B-Type | Base        | sw ra,8(t0) |
+| 0x00812223 | 35 | S/B-Type | Base        | sw s0,4(t0) |
+| 0x00912023 | 35 | S/B-Type | Base        | sw s1,(t0) |
+| 0xfff50513 | 19 | I-Type | Immediate     | addi a0,a0,-1 |
 | 0xfddff0ef | 111 | U/J-Type | PC-Relative| jal ra,-36 |
-| 0x00a00433 | 51 | R-Type | Register-Only | add x8,x0,x10 |
-| 0x00c12503 | 3 | I-Type | Base           | lw x10,12(x2) |
-| 0xffe50513 | 19 | I-Type | Immediate     | addi x10,x10,-2 |
+| 0x00a00433 | 51 | R-Type | Register-Only | add s0,zero,a0 |
+| 0x00c12503 | 3 | I-Type | Base           | lw a0,12(sp) |
+| 0xffe50513 | 19 | I-Type | Immediate     | addi a0,a0,-2 |
 | 0xfcdff0ef | 111 | U/J-Type | PC-Relative| jal ra,-52 |
-| 0x00a004b3 | 51 | R-Type | Register-Only | add x9,x0,x10 |
-| 0x00848433 | 51 | R-Type | Register-Only | add x8,x9,x8 |
-| 0x00040533 | 51 | R-Type | Register-Only | add x10,x8,x0 |
-| 0x00812083 | 3 | I-Type | Base           | lw x1,8(x2) |
-| 0x00412403 | 3 | I-Type | Base           | lw x8,4(x2) |
-| 0x00012483 | 3 | I-Type | Base           | lw x9,(x2) |
-| 0x01010113 | 19 | I-Type | Immediate     | addi x2,x2,16 |
+| 0x00a004b3 | 51 | R-Type | Register-Only | add s1,zero,a0 |
+| 0x00848433 | 51 | R-Type | Register-Only | add s0,s1,s0 |
+| 0x00040533 | 51 | R-Type | Register-Only | add a0,s0,zero |
+| 0x00812083 | 3 | I-Type | Base           | lw ra,8(sp) |
+| 0x00412403 | 3 | I-Type | Base           | lw s0,4(sp) |
+| 0x00012483 | 3 | I-Type | Base           | lw s1,(sp) |
+| 0x01010113 | 19 | I-Type | Immediate     | addi sp,sp,16 |
 | 0x00008067 | 103 | I-Type | Base         | jalr zero,ra,0 |
 
 
