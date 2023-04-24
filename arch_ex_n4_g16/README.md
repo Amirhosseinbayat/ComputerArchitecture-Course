@@ -34,6 +34,7 @@ jalr x0,x1,0    # PC = rs1 + sign extend(imm), rd=PC+4
 ![image](https://user-images.githubusercontent.com/77579794/234019839-dedc8bfc-d53c-4ab4-aa5c-02d91d092188.png)
 
 
+**Table 7.3**
 | ALUOp |‌funct3 |‌{op5, funct75} | ALUControl         |‌ Instruction |
 | ---   | ---   | ---           | ---                | ---         |
 | 00    |‌x      | x             | 000 (add)          |‌lw, sw, jalr |
@@ -43,4 +44,6 @@ jalr x0,x1,0    # PC = rs1 + sign extend(imm), rd=PC+4
 |       |010    | x             | 101 (set less than)|       slt   |
 |‌       |110    | x             | 011 (or)           |       or    |
 |       |111    | x             | 010 (and)          |       and   |
+
+**Table 7.6**
 
