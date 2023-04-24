@@ -46,4 +46,13 @@ jalr x0,x1,0    # PC = rs1 + sign extend(imm), rd=PC+4
 |       |111    | x             | 010 (and)          |       and   |
 
 **Table 7.6**
+| Instruction | Opcode | RegWrite | ImmSrc | ALUSrc | MemWrite | ResultSrc | Branch | ALUOp | Jump | PCResultSrc |
+|   ---       |  ---   | ---      |    --- |  ---   |   ---    |    ---    |  ---   | ---   | ---  | ---         |
+|    lw       | 0000011|   1      |     |     |       |        |     |    |   |          |
+|    sw       | 0100011|   0      |     |     |       |        |     |    |   |          |
+|    R-Type   | 0110011|   1      |     |     |       |        |     |    |   |          |
+|    beq      | 1100011|   0      |     |     |       |        |     |    |   |          |
+| I-type ALU  | 0010011|   1      |     |     |       |        |     |    |   |          |
+|    jal      | 1101111|   1      |     |     |       |        |     |    |   |          |
+|    jalr     | 1100111|   1      |     |     |       |        |     |    |   |          |
 
