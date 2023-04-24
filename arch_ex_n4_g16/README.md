@@ -36,7 +36,7 @@ jalr x0,x1,0    # PC = rs1 + sign extend(imm), rd=PC+4
 
 | ALUOp |‌funct3 |‌{op5, funct75} | ALUControl         |‌ Instruction |
 | ---   | ---   | ---           | ---                | ---         |
-| 00    |‌x      | x             | 000 (add)          |‌      lw, sw |
+| 00    |‌x      | x             | 000 (add)          |‌lw, sw, jalr |
 | 01    |‌x      | x             | 001 (subtract)     |       beq   |
 |‌ 10    |‌000    | 00, 01, 10    | 000 (add)          |       add   |‌
 |       |000    |‌ 11            | 001 (subtract)     |       sub   |
