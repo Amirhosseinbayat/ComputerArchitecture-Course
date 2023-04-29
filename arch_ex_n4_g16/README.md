@@ -61,11 +61,33 @@ jalr x0,x1,0    # PC = rs1 + sign extend(imm), rd=PC+4
 <div dir="rtl">
 
 ## سوال ۲
+با استفاده از تغییرات موجود در سوال یک روی data path
+  کد را تغییر می‌دهیم تا بتوانیم از jalr پشتیبانی کنیم. این تغییرات با کامنت‌های ‍‍‍‍‍`// changed by me for jalr` قابل مشاهده هستند. به صورت کلی این تغییرات شامل اضافه کردن سیگنال کنترلی `PCResultSrc` و سیگنال میانی `PCResultTarget` و اضافه کردن `pcsrcmux` میباشد.
+  
+  همچنین با توجه به جدول ۷.۶ مقادیر مورد تحلیل تابع `maindec` دستخوش تغییر شده اند.
+  
+  شرح تغییرات در تصاویر زیر:
+ 
 
-مشکل modelsim:
+  ![image](https://user-images.githubusercontent.com/77579794/235314695-bfd847df-3531-4fdb-9537-2dea0fb87bb8.png)
+
+  ![image](https://user-images.githubusercontent.com/77579794/235314686-a6aad5e7-b125-4fa6-81d6-1c7005595bea.png)
+
+  ![image](https://user-images.githubusercontent.com/77579794/235314716-739bee4d-fec6-4f3a-8185-0f4b176435d3.png)
+
+  ![image](https://user-images.githubusercontent.com/77579794/235314665-9e3727f4-edf3-4429-97b2-f684144fe200.png)
+
+  باقی دستورات ذکر شده نظیر addi و jal در کد کتاب بدون ایجاد تغییرات پشتیبانی می‌شوند. برخی از این خطوط در کد با کامنت‌هایی مشخص شده است.
+  
+  فضای compile کد:
+  ![image](https://user-images.githubusercontent.com/77579794/235314427-d992ae5e-4b32-4782-94b0-88312123f494.png)
+  
+  کد مربوط به testbench و کدهای اسمبلی به پیوست در q2 قابل مشاهده هستند.
 
 </div>
 
+
+simulation commands:
 ~~~
 vlog -reportprogress 300 -work work //VBOXSVR/University/Architecture/arch_ex_n4_g16/q2/riscvsingle.sv
 vlog -reportprogress 300 -work work //VBOXSVR/University/Architecture/arch_ex_n4_g16/q2/testBench.sv
