@@ -56,6 +56,20 @@ jalr x0,x1,0    # PC = rs1 + sign extend(imm), rd=PC+4
 |    jal      | 1101111|   1      |   11   |   x    |    0     |    10     |   0    |  xx   |   1  |     0       |
 |    jalr     | 1100111|   1      |   00   |   1    |    0     |    10     |   0    |  00   |   1  |     1       |
 
+
+
+<div dir="rtl">
+
+## سوال ۲
+
+مشکل modelsim:
+
+</div>
+
+~~~
+vsim -voptargs=+acc=lprn testbench
+~~~
+
 <div dir="rtl">
 
 ## سوال ۳
