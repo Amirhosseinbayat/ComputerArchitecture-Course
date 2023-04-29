@@ -17,5 +17,7 @@ add x9, x2, x5                  # x9 = (7 + 11) = 183C005104B3
 jal x3, end                     # jump to end, x3 = 0x4440008001EF
 addi x2, x0, 1                  #shouldn't execute4400100113
 end: add x2, x2, x9             # x2 = (7 + 18) = 25484C00910133
+jal dummy
 sw x2, 0x20(x3)                 # [100] = 250221A023
 done: beq x2, x2, done          # infinite loop5000210063
+dummy: jalr zero,ra,0
