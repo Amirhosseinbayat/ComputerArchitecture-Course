@@ -27,7 +27,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work altera_ver {e:/intelfpga/21.1/quartus/eda/sim_lib/altera_primitives.v}
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 02:29:02 on Mar 13,2023
+# Start time: 02:35:42 on Apr 29,2023
 # vlog -reportprogress 300 -vlog01compat -work altera_ver e:/intelfpga/21.1/quartus/eda/sim_lib/altera_primitives.v 
 # -- Compiling module global
 # -- Compiling module carry
@@ -109,7 +109,7 @@
 # 	alt_iobuf_diff
 # 	alt_bidir_diff
 # 	alt_bidir_buf
-# End time: 02:29:03 on Mar 13,2023, Elapsed time: 0:00:01
+# End time: 02:35:42 on Apr 29,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/lpm_ver
@@ -121,7 +121,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work lpm_ver {e:/intelfpga/21.1/quartus/eda/sim_lib/220model.v}
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 02:29:03 on Mar 13,2023
+# Start time: 02:35:42 on Apr 29,2023
 # vlog -reportprogress 300 -vlog01compat -work lpm_ver e:/intelfpga/21.1/quartus/eda/sim_lib/220model.v 
 # -- Compiling module LPM_MEMORY_INITIALIZATION
 # -- Compiling module LPM_HINT_EVALUATION
@@ -185,7 +185,7 @@
 # 	lpm_inpad
 # 	lpm_outpad
 # 	lpm_bipad
-# End time: 02:29:03 on Mar 13,2023, Elapsed time: 0:00:00
+# End time: 02:35:43 on Apr 29,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/sgate_ver
@@ -197,7 +197,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work sgate_ver {e:/intelfpga/21.1/quartus/eda/sim_lib/sgate.v}
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 02:29:03 on Mar 13,2023
+# Start time: 02:35:43 on Apr 29,2023
 # vlog -reportprogress 300 -vlog01compat -work sgate_ver e:/intelfpga/21.1/quartus/eda/sim_lib/sgate.v 
 # -- Compiling module oper_add
 # -- Compiling module oper_addsub
@@ -239,7 +239,7 @@
 # 	oper_decoder
 # 	oper_bus_mux
 # 	oper_latch
-# End time: 02:29:04 on Mar 13,2023, Elapsed time: 0:00:01
+# End time: 02:35:43 on Apr 29,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/altera_mf_ver
@@ -251,7 +251,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work altera_mf_ver {e:/intelfpga/21.1/quartus/eda/sim_lib/altera_mf.v}
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 02:29:04 on Mar 13,2023
+# Start time: 02:35:43 on Apr 29,2023
 # vlog -reportprogress 300 -vlog01compat -work altera_mf_ver e:/intelfpga/21.1/quartus/eda/sim_lib/altera_mf.v 
 # -- Compiling module lcell
 # -- Compiling module ALTERA_MF_MEMORY_INITIALIZATION
@@ -381,7 +381,7 @@
 # 	alt_fault_injection
 # 	sld_virtual_jtag_basic
 # 	altsource_probe
-# End time: 02:29:06 on Mar 13,2023, Elapsed time: 0:00:02
+# End time: 02:35:45 on Apr 29,2023, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/altera_lnsim_ver
@@ -393,7 +393,7 @@
 # Modifying modelsim.ini
 # vlog -sv -work altera_lnsim_ver {e:/intelfpga/21.1/quartus/eda/sim_lib/altera_lnsim.sv}
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 02:29:06 on Mar 13,2023
+# Start time: 02:35:45 on Apr 29,2023
 # vlog -reportprogress 300 -sv -work altera_lnsim_ver e:/intelfpga/21.1/quartus/eda/sim_lib/altera_lnsim.sv 
 # -- Compiling package altera_lnsim_functions
 # -- Compiling package altera_generic_pll_functions
@@ -476,7 +476,7 @@
 # 	altera_iopll
 # 	fourteennm_altera_iopll
 # 	fourteennm_simple_iopll
-# End time: 02:29:07 on Mar 13,2023, Elapsed time: 0:00:01
+# End time: 02:35:45 on Apr 29,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/cyclonev_ver
@@ -488,7 +488,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work cyclonev_ver {e:/intelfpga/21.1/quartus/eda/sim_lib/mentor/cyclonev_atoms_ncrypt.v}
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 02:29:07 on Mar 13,2023
+# Start time: 02:35:45 on Apr 29,2023
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_ver e:/intelfpga/21.1/quartus/eda/sim_lib/mentor/cyclonev_atoms_ncrypt.v 
 # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
 # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
@@ -502,19 +502,19 @@
 # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
 # 
 # Top level modules:
-# End time: 02:29:09 on Mar 13,2023, Elapsed time: 0:00:02
+# End time: 02:35:47 on Apr 29,2023, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 10
 # vlog -vlog01compat -work cyclonev_ver {e:/intelfpga/21.1/quartus/eda/sim_lib/mentor/cyclonev_hmi_atoms_ncrypt.v}
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 02:29:09 on Mar 13,2023
+# Start time: 02:35:47 on Apr 29,2023
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_ver e:/intelfpga/21.1/quartus/eda/sim_lib/mentor/cyclonev_hmi_atoms_ncrypt.v 
 # 
 # Top level modules:
-# End time: 02:29:11 on Mar 13,2023, Elapsed time: 0:00:02
+# End time: 02:35:48 on Apr 29,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work cyclonev_ver {e:/intelfpga/21.1/quartus/eda/sim_lib/cyclonev_atoms.v}
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 02:29:12 on Mar 13,2023
+# Start time: 02:35:48 on Apr 29,2023
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_ver e:/intelfpga/21.1/quartus/eda/sim_lib/cyclonev_atoms.v 
 # -- Compiling UDP CYCLONEV_PRIM_DFFE
 # -- Compiling UDP CYCLONEV_PRIM_DFFEAS
@@ -654,7 +654,7 @@
 # 	cyclonev_mem_phy
 # 	cyclonev_oscillator
 # 	cyclonev_hps_interface_fpga2sdram
-# End time: 02:29:13 on Mar 13,2023, Elapsed time: 0:00:01
+# End time: 02:35:49 on Apr 29,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/cyclonev_hssi_ver
@@ -666,15 +666,15 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work cyclonev_hssi_ver {e:/intelfpga/21.1/quartus/eda/sim_lib/mentor/cyclonev_hssi_atoms_ncrypt.v}
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 02:29:14 on Mar 13,2023
+# Start time: 02:35:49 on Apr 29,2023
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_hssi_ver e:/intelfpga/21.1/quartus/eda/sim_lib/mentor/cyclonev_hssi_atoms_ncrypt.v 
 # 
 # Top level modules:
-# End time: 02:29:17 on Mar 13,2023, Elapsed time: 0:00:03
+# End time: 02:35:51 on Apr 29,2023, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work cyclonev_hssi_ver {e:/intelfpga/21.1/quartus/eda/sim_lib/cyclonev_hssi_atoms.v}
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 02:29:17 on Mar 13,2023
+# Start time: 02:35:51 on Apr 29,2023
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_hssi_ver e:/intelfpga/21.1/quartus/eda/sim_lib/cyclonev_hssi_atoms.v 
 # -- Compiling module cyclonev_hssi_8g_pcs_aggregate
 # -- Compiling module cyclonev_hssi_8g_rx_pcs
@@ -774,7 +774,7 @@
 # 	arriav_hssi_avmm_interface
 # 	arriav_hssi_pma_hi_pmaif
 # 	arriav_hssi_pma_hi_xcvrif
-# End time: 02:29:18 on Mar 13,2023, Elapsed time: 0:00:01
+# End time: 02:35:51 on Apr 29,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/cyclonev_pcie_hip_ver
@@ -786,7 +786,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work cyclonev_pcie_hip_ver {e:/intelfpga/21.1/quartus/eda/sim_lib/mentor/cyclonev_pcie_hip_atoms_ncrypt.v}
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 02:29:18 on Mar 13,2023
+# Start time: 02:35:51 on Apr 29,2023
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_pcie_hip_ver e:/intelfpga/21.1/quartus/eda/sim_lib/mentor/cyclonev_pcie_hip_atoms_ncrypt.v 
 # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
 # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
@@ -796,23 +796,24 @@
 # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
 # 
 # Top level modules:
-# End time: 02:29:21 on Mar 13,2023, Elapsed time: 0:00:03
+# End time: 02:35:53 on Apr 29,2023, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 6
 # vlog -vlog01compat -work cyclonev_pcie_hip_ver {e:/intelfpga/21.1/quartus/eda/sim_lib/cyclonev_pcie_hip_atoms.v}
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 02:29:21 on Mar 13,2023
+# Start time: 02:35:53 on Apr 29,2023
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_pcie_hip_ver e:/intelfpga/21.1/quartus/eda/sim_lib/cyclonev_pcie_hip_atoms.v 
 # -- Compiling module cyclonev_hd_altpe2_hip_top
 # -- Compiling module arriav_hd_altpe2_hip_top
 # 
 # Top level modules:
 # 	cyclonev_hd_altpe2_hip_top
-# End time: 02:29:22 on Mar 13,2023, Elapsed time: 0:00:01
+# End time: 02:35:54 on Apr 29,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
 # }
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt".  Locker is mohsen@MOHSEN-PC.
 # ** Warning: (vdel-134) Unable to remove locked optimized design "_opt1".  Locker is mohsen@MOHSEN-PC.
 # vlib rtl_work
 # ** Warning: (vlib-34) Library already exists at "rtl_work".
@@ -824,7 +825,7 @@
 # 
 # vlog -sv -work work +incdir+//VBOXSVR/University/Architecture/exc1 {//VBOXSVR/University/Architecture/exc1/MUX32_1.sv}
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 02:29:22 on Mar 13,2023
+# Start time: 02:35:54 on Apr 29,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+//VBOXSVR/University/Architecture/exc1" //VBOXSVR/University/Architecture/exc1/MUX32_1.sv 
 # -- Compiling module mux2_assign
 # -- Compiling module mux2_if
@@ -836,38 +837,6 @@
 # 
 # Top level modules:
 # 	mux32_1_32bit
-# End time: 02:29:22 on Mar 13,2023, Elapsed time: 0:00:00
+# End time: 02:35:54 on Apr 29,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-vlog -reportprogress 300 -work work //VBOXSVR/University/Architecture/exc1/MUX32_1.sv
-# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 02:29:27 on Mar 13,2023
-# vlog -reportprogress 300 -work work //VBOXSVR/University/Architecture/exc1/MUX32_1.sv 
-# -- Compiling module mux2_assign
-# -- Compiling module mux2_if
-# -- Compiling module mux2_case
-# -- Compiling module mux4
-# -- Compiling module mux8
-# -- Compiling module mux16
-# -- Compiling module mux32_1_32bit
-# 
-# Top level modules:
-# 	mux32_1_32bit
-# End time: 02:29:27 on Mar 13,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work //VBOXSVR/University/Architecture/exc1/MUX32_1_tb.sv
-# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 02:29:27 on Mar 13,2023
-# vlog -reportprogress 300 -work work //VBOXSVR/University/Architecture/exc1/MUX32_1_tb.sv 
-# -- Compiling module mux32_1_tb
-# 
-# Top level modules:
-# 	mux32_1_tb
-# End time: 02:29:27 on Mar 13,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vsim mux32_1_tb
-# vsim mux32_1_tb 
-# Start time: 02:29:43 on Mar 13,2023
-# ** Note: (vsim-3812) Design is being optimized...
-# Loading sv_std.std
-# Loading work.mux32_1_tb(fast)
