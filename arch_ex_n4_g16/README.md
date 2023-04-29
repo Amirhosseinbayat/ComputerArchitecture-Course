@@ -91,6 +91,27 @@ jalr x0,x1,0    # PC = rs1 + sign extend(imm), rd=PC+4
 
 </div>
 
+~~~
+jal dummy                       # ra=PC+4, jumps to dummy
+addi t1,t1,-8                   # set t1 to ok
+jalr zero,t1,0                  # PC=t1+0
+ok: sw x2, 0x20(x3)             # [100] = 250221A023
+done: beq x2, x2, done          # infinite loop5000210063
+dummy: jalr t1,ra,0             # PC=ra+0,t1=PC+4
+~~~
+
+<div dir="rtl">
+
+این تکه کد jalr را به خوبی تست میکند. 
+به این شکل که هر دو عملیات تغییر PC 
+و تغییر rd به 
+PC+4 تست می‌شود.
+در صورتی که هر یک از این عملیات موفق نشود مقدار نهایی در حافظه ذخیره نخواهد شد
+
+
+</div>
+
+
 
 simulation commands:
 ~~~
