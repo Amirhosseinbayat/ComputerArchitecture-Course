@@ -68,6 +68,7 @@ jalr x0,x1,0    # PC = rs1 + sign extend(imm), rd=PC+4
 
 ~~~
 vsim -voptargs=+acc=lprn testbench
+add wave -position insertpoint sim:/testbench/*
 ~~~
 
 <div dir="rtl">
