@@ -67,6 +67,8 @@ jalr x0,x1,0    # PC = rs1 + sign extend(imm), rd=PC+4
 </div>
 
 ~~~
+vlog -reportprogress 300 -work work //VBOXSVR/University/Architecture/arch_ex_n4_g16/q2/riscvsingle.sv
+vlog -reportprogress 300 -work work //VBOXSVR/University/Architecture/arch_ex_n4_g16/q2/testBench.sv
 vsim -voptargs=+acc=lprn testbench
 add wave -position insertpoint sim:/testbench/*
 ~~~
