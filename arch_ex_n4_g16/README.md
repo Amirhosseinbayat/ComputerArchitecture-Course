@@ -117,6 +117,9 @@ simulation commands:
 ~~~
 vlog -reportprogress 300 -work work //VBOXSVR/University/Architecture/arch_ex_n4_g16/q2/riscvsingle.sv
 vlog -reportprogress 300 -work work //VBOXSVR/University/Architecture/arch_ex_n4_g16/q2/testBench.sv
+
+vlog -reportprogress 300 -work work C:/Users/mohsen/Desktop/verilog/n4/riscvsingle.sv
+vlog -reportprogress 300 -work work C:/Users/mohsen/Desktop/verilog/n4/testBench.sv
 vsim -voptargs=+acc=lprn testbench
 add wave -position insertpoint sim:/testbench/*
 ~~~
