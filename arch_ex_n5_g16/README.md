@@ -29,4 +29,6 @@
 
 
 ### سوال ۳
-
+| op | funct3 | funct7 | Type | Instruction | Description | Operation | 
+| --- | --- | --- | --- | --- | --- | --- | 
+| 0010011 (19) | 101 | 0100000 | I | srai  rd,  rs1, uimm | shift right arithmetic imm. | rd =  rs1 >>> uim |
