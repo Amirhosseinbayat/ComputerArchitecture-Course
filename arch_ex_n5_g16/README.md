@@ -34,17 +34,20 @@
 | 0010011 (19) | 101 | 0100000 | I | srai  rd,  rs1, uimm | shift right arithmetic imm. | rd =  rs1 >>> uim |
 
 تغییرات مورد نیاز:‌ 
-- پشتیبانی ALU از sra
+- پشتیبانی ALU از srai
+
+در extend unit تغییری ایجاد نمیکنیم و همان sign extend I-Type برای این مورد جوابگوست, چرا که تنها ۵ بیت از imm در ALU مورد استفاده قرار  خواهد گرفت و sign extend روی بیت ۱۲ ام اتفاق می افتد.
 
 **Table 7.3**
 | ALUOp |‌funct3 |‌{op5, funct75} | ALUControl         |‌ Instruction |
 | ---   | ---   | ---           | ---                | ---         |
-| 00    |‌x      | x             | 000 (add)          |‌lw, sw, jalr |
+| 00    |‌x      | x             | 000 (add)          |‌lw, sw,      |
 | 01    |‌x      | x             | 001 (subtract)     |       beq   |
 |‌ 10    |‌000    | 00, 01, 10    | 000 (add)          |       add   |‌
 |       |000    |‌ 11            | 001 (subtract)     |       sub   |
 |       |010    | x             | 101 (set less than)|       slt   |
 |‌       |110    | x             | 011 (or)           |       or    |
 |       |111    | x             | 010 (and)          |       and   |
+|‌       |101    | x             | 111 (srai)         |       srai  |
 
 - تغییرات واحد کنترل
