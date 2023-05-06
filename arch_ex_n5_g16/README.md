@@ -23,3 +23,32 @@
 
 ![image](https://user-images.githubusercontent.com/77579794/236620577-74c2c7f1-d48b-4ab0-b3da-6fe10915a2aa.png)
 
+
+
+
+
+---
+
+### سوال ۳
+| op | funct3 | funct7 | Type | Instruction | Description | Operation | 
+| --- | --- | --- | --- | --- | --- | --- | 
+| 0010011 (19) | 101 | 0100000 | I | srai  rd,  rs1, uimm | shift right arithmetic imm. | rd =  rs1 >>> uim |
+
+تغییرات مورد نیاز:‌ 
+- پشتیبانی ALU از srai
+
+در extend unit تغییری ایجاد نمیکنیم و همان sign extend I-Type برای این مورد جوابگوست, چرا که تنها ۵ بیت از imm در ALU مورد استفاده قرار  خواهد گرفت(به این دلیل که رجیسترها ۳۲ بیتی اند و نمیتوان بیشتر از ۳۲ بیت آنهارا شیفت داد) و sign extend روی بیت ۱۲ ام اتفاق می‌افتد. پس ورودی ALU در دسترس می‌باشد.
+
+**Table 7.3**
+| ALUOp |‌funct3 |‌{op5, funct75} | ALUControl         |‌ Instruction |
+| ---   | ---   | ---           | ---                | ---         |
+| 00    |‌x      | x             | 000 (add)          |‌lw, sw,      |
+| 01    |‌x      | x             | 001 (subtract)     |       beq   |
+|‌ 10    |‌000    | 00, 01, 10    | 000 (add)          |       add   |‌
+|       |000    |‌ 11            | 001 (subtract)     |       sub   |
+|       |010    | x             | 101 (set less than)|       slt   |
+|‌       |110    | x             | 011 (or)           |       or    |
+|       |111    | x             | 010 (and)          |       and   |
+|‌       |101    | x             | 111 (srai)         |       srai  |
+
+- واحد کنترل و مسیر داده نیازی به تغییر ندارند. درست مثل دیگر دستورالعمل‌های I-Type دیگر دستور اجرا می‌شود و سیگنال‌های کنترلی تفاوتی نمی‌کنند.
