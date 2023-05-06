@@ -4,9 +4,18 @@
 
 ### سوال ۱
 
+</div>
+
+تغییرات روی datapath
+به این شکل انجام شده که برای تهیه `rs1` و `rs2` نیاز به دو ‍‍`clk` ‍‍ میباشد. سیگنال‌ کنترلی `RegRead1:0` برای `enable` شدن نوشتن هر کدام از رجیستر‌های مبدا بر روی register مربوطه تعبیه گردیده است. بیت 0 مربوط به `rs1` و بیت 1 مربوط به رجیستر `rs2` می‌باشد.
+
+برای تعیین آدرس رجیسترها سیگنال `RegAddr1:0` در نظر گرفته شده تا بین `rs1` , `rs2` و `rd` انتخاب کند.
+
+
   ![image](https://user-images.githubusercontent.com/77579794/236617873-b2eafc54-8687-46a0-8004-7579a057e126.png)
 
-  ![image](https://user-images.githubusercontent.com/77579794/236620082-3322e38d-88c5-4cd8-b5d8-f4bac5879423.png)
 
 
-</div>
+  ![image](https://user-images.githubusercontent.com/77579794/236620106-e1b08355-283c-43b9-aa4b-6c7a935d48e1.png)
+
+
