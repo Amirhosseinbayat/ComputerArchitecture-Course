@@ -27,6 +27,7 @@
 
 
 
+---
 
 ### سوال ۳
 | op | funct3 | funct7 | Type | Instruction | Description | Operation | 
