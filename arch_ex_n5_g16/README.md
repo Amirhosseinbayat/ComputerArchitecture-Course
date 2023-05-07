@@ -5,8 +5,6 @@
 
 ### سوال ۱
 
-</div>
-
 
 #### مسیر داده
 تغییرات روی datapath
@@ -14,12 +12,19 @@
 
 برای تعیین آدرس رجیسترها سیگنال `RegAddr1:0` در نظر گرفته شده تا بین `rs1` , `rs2` و `rd` انتخاب کند.
 
+</div>
+
 
   ![image](https://user-images.githubusercontent.com/77579794/236617873-b2eafc54-8687-46a0-8004-7579a057e126.png)
+
+<div dir="rtl">
 
 
 #### ماشین حالت
 حالت جدیدی به ماشین حالت اضافه نشده‌است. اما دستوراتی `R-Typte` و `Branch‍‍` هر کدام یک stage اضافه‌تر دارند. چرا که آماده‌سازی ورودی‌های ALU هنگامی که هر دو ورودی register باشند دو ‍`clk` به طول می‌انجامد.
+
+
+</div>
 
 
 ![image](https://user-images.githubusercontent.com/77579794/236620577-74c2c7f1-d48b-4ab0-b3da-6fe10915a2aa.png)
@@ -31,10 +36,10 @@
 ---
 
 
+<div dir="rtl">
 
 ## سوال ۲
 
-<div dir="rtl">
 
 در ۷ خط ابتدایی این قطعه کد، که شامل دستور `addi` و `sb` است که به ترتیب عمل `add immediate` و `store byte` را انجام میدهند.
 
@@ -137,10 +142,19 @@
 
 **CPI**
 `(0.7887)(4) + (0.2112)(3) = 3.7884`
-=======
+  
+---
 
 
+
+<div dir="rtl">
+  
 ### سوال ۳
+
+  </div>
+  
+  
+  
 | op | funct3 | funct7 | Type | Instruction | Description | Operation | 
 | --- | --- | --- | --- | --- | --- | --- | 
 | 0010011 (19) | 101 | 0100000 | I | srai  rd,  rs1, uimm | shift right arithmetic imm. | rd =  rs1 >>> uim |
