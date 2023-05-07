@@ -186,7 +186,7 @@ int nth_fibo(int n)
     return n; 
   else
     nextTerm = t1 + t2;
-  for (i = 3; i <= n; ++i)
+  for (i = 2; i <= n; ++i)
   {
     t1 = t2;
     t2 = nextTerm;
