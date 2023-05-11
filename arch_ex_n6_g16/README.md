@@ -2,7 +2,9 @@
 
 
 # تمرین ۶
-وقفه‌ها و پیش‌ارسالی‌های مورد نیاز:
+---
+  ### سوال  ۳
+  وقفه‌ها و پیش‌ارسالی‌های مورد نیاز:
   
   ![image](https://github.com/Amirhosseinbayat/ComputerArchitecture-Course/assets/77579794/acd5cc5c-ee72-4415-bc46-532892867764)
 
