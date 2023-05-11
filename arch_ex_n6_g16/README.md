@@ -32,11 +32,11 @@ sw t3, 4(t1)          # [11] <= t3
   
   شبیه‌سازی نادرست و بدون رفع مخاطره:
   
-  ![image](https://github.com/Amirhosseinbayat/ComputerArchitecture-Course/assets/77579794/a5ed4da4-817c-4d61-8b7b-41841df9a351)
+ ![image](https://github.com/Amirhosseinbayat/ComputerArchitecture-Course/assets/77579794/54c51fd2-0437-403c-a86d-50a9ae0bfaf8)
 
   
   شبیه‌سازی درست:
-  ![image](https://github.com/Amirhosseinbayat/ComputerArchitecture-Course/assets/77579794/cc5ae4b5-0057-42f7-99d9-63b83b8bed23)
+ ![image](https://github.com/Amirhosseinbayat/ComputerArchitecture-Course/assets/77579794/ab96b929-9ee1-426a-9c23-5d9871d01e39)
 
   
   
