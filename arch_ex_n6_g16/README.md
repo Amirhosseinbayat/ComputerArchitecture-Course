@@ -13,14 +13,15 @@
   
   
   ~~~
+                     # instruction ends in this clk
 addi s0, zero, 24‍‍‍    # 5
 addi s1, zero, 16    # 6
 sub t0, s0, s1       # 7
 lw t1, 2(t0)         # 8
-ori t2, t1, 63        
-lw s2, 0(t2)
-xori t1, s2, 27 
-sw t1, 0(s1)
+ori t2, t1, 63       # 10
+lw s2, 0(t2)         # 11
+xori t1, s2, 27      # 13
+sw t1, 0(s1)         # 14
 ~~~
   
   
