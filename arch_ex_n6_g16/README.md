@@ -13,7 +13,7 @@
   
   
   ~~~
-                     # instruction ends in this clk
+                     # instruction ends in this cycle
 addi s0, zero, 24‍‍‍    # 5
 addi s1, zero, 16    # 6
 sub t0, s0, s1       # 7
