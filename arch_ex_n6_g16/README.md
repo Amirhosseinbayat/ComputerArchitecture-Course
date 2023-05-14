@@ -5,7 +5,7 @@
 
   
   ### سوال ۱
-  ![image](https://github.com/Amirhosseinbayat/ComputerArchitecture-Course/assets/77579794/ca467c4d-31bd-4c6b-9f00-634b820fd6e9)
+  ![image](https://github.com/Amirhosseinbayat/ComputerArchitecture-Course/assets/77579794/ccfa1bab-b468-4786-a4ab-5b5b065affd5)
 
   
   بر اساس صفحه `454` رفرنس هریس، زمان دوره کلاک بر اساس ماکسیمم میزان پنج استیج `Fetch` ، `Decode` ، `Execute` ، `Memory` ، `Writeback` است.
