@@ -9,7 +9,7 @@
   
   ![image](https://github.com/Amirhosseinbayat/ComputerArchitecture-Course/assets/77579794/571bdfcf-ecb0-435d-8655-073e41ff38e2)
   
-  برای این سوال یک لایه cache دیگر هم داریم که رابطه بازگشتی به شکل زیر تبدیل خواهد شد:
+  برای این سوال دو لایه cache داریم اما virtual memory نداریم, که در این صورت رابطه بازگشتی به شکل زیر تبدیل خواهد شد:
 
 </div>
 
