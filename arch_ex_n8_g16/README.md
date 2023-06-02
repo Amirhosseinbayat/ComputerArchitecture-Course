@@ -297,12 +297,14 @@ main:
   
   4-way:
   
-![image](https://github.com/Amirhosseinbayat/ComputerArchitecture-Course/assets/77579794/8428531b-4697-4464-be8e-7920f536de6f)
+  
+  ![image](https://github.com/Amirhosseinbayat/ComputerArchitecture-Course/assets/77579794/9f1fee62-913c-4b56-a651-ff2286274021)
+  
 
   
   8-way:
   
-  ![image](https://github.com/Amirhosseinbayat/ComputerArchitecture-Course/assets/77579794/9f1fee62-913c-4b56-a651-ff2286274021)
+![image](https://github.com/Amirhosseinbayat/ComputerArchitecture-Course/assets/77579794/8428531b-4697-4464-be8e-7920f536de6f)
 
   
   
