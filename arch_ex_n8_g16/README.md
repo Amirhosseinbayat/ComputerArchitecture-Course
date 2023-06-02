@@ -262,6 +262,7 @@ main:
 
 الف)
   هر word = ۴ bytes
+  
   اندازه بلاک 4 bytes:
 
 ![image](https://github.com/Amirhosseinbayat/ComputerArchitecture-Course/assets/77579794/ba7bfec6-a538-48a1-b83e-295ab8e6129f)
