@@ -304,8 +304,8 @@ main:
   
   8-way:
   
-![image](https://github.com/Amirhosseinbayat/ComputerArchitecture-Course/assets/77579794/8428531b-4697-4464-be8e-7920f536de6f)
-
+![image](https://github.com/Amirhosseinbayat/ComputerArchitecture-Course/assets/77579794/755f2776-f6ee-4ebf-a453-d2e5fa2a6737)
+  
   
   
   
