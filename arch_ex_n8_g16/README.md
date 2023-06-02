@@ -173,7 +173,11 @@ miss rate = 9.53 %
 ### سوال ۳
 
 کد اسمبلی ( با استفاده از ابزار https://godbolt.org ) :
-
+  
+  
+  </div>
+  
+  
   <div dir="ltr">
     
 ~~~
@@ -288,6 +292,10 @@ main:
   ظرفیت: 16*4 bytes
  
   اندازه بلاک: 4
+  </div>
+  
+  
+  <div dir="ltr">
   
   2-way:
   
@@ -306,8 +314,14 @@ main:
   
 ![image](https://github.com/Amirhosseinbayat/ComputerArchitecture-Course/assets/77579794/755f2776-f6ee-4ebf-a453-d2e5fa2a6737)
   
+    
+    </div>
   
   
+  <div dir="rtl">
+  
+  
+  با افزایش درجه associativity می‌توان miss هایی از جنس **conflict** را پوشش داد. اما ظاهرا در مورد این کد, افزایش این درجه تاثیری چندانی روی بهبود نرخ miss ندارد چرا که miss هایی که از جنس conflict بوده‌اند در مرحله اول مهاجرت از نگاشت مستقیم برطرف شده و سایز فعلی حافظه نهان با افزایش درجه associativity نمی‌تواند کمکی به اجرای سریع‌تر برنامه کند. 
   
   
 ### سوال ۴
