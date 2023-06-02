@@ -315,7 +315,7 @@ main:
 ![image](https://github.com/Amirhosseinbayat/ComputerArchitecture-Course/assets/77579794/755f2776-f6ee-4ebf-a453-d2e5fa2a6737)
   
     
-    </div>
+  </div>
   
   
   <div dir="rtl">
