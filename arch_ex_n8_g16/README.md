@@ -182,17 +182,18 @@ miss rate = 9.53 %
     
 ~~~
     
+    
 main:
         addi    sp,sp,-288
         sw      s0,284(sp)
         addi    s0,sp,288
         sw      zero,-28(s0)
         sw      zero,-20(s0)
-        j       .L2
-.L5:
+        j       L2
+L5:
         sw      zero,-24(s0)
-        j       .L3
-.L4:
+        j       L3
+L4:
         lw      a4,-20(s0)
         lw      a5,-24(s0)
         add     a5,a4,a5
@@ -208,23 +209,23 @@ main:
         lw      a5,-24(s0)
         addi    a5,a5,1
         sw      a5,-24(s0)
-.L3:
+L3:
         lw      a4,-24(s0)
         li      a5,7
-        ble     a4,a5,.L4
+        ble     a4,a5,L4
         lw      a5,-20(s0)
         addi    a5,a5,1
         sw      a5,-20(s0)
-.L2:
+L2:
         lw      a4,-20(s0)
         li      a5,7
-        ble     a4,a5,.L5
+        ble     a4,a5,L5
         sw      zero,-20(s0)
-        j       .L6
-.L9:
+        j       L6
+L9:
         sw      zero,-24(s0)
-        j       .L7
-.L8:
+        j       L7
+L8:
         lw      a5,-20(s0)
         slli    a4,a5,3
         lw      a5,-24(s0)
@@ -239,23 +240,23 @@ main:
         lw      a5,-24(s0)
         addi    a5,a5,1
         sw      a5,-24(s0)
-.L7:
+L7:
         lw      a4,-24(s0)
         li      a5,7
-        ble     a4,a5,.L8
+        ble     a4,a5,L8
         lw      a5,-20(s0)
         addi    a5,a5,1
         sw      a5,-20(s0)
-.L6:
+L6:
         lw      a4,-20(s0)
         li      a5,7
-        ble     a4,a5,.L9
+        ble     a4,a5,L9
         li      a5,0
         mv      a0,a5
         lw      s0,284(sp)
         addi    sp,sp,288
         #jr      ra
-    
+        
 ~~~
     
     
