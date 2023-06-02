@@ -284,8 +284,27 @@ main:
   
   
   ب) 
+  
   ظرفیت: 16*4 bytes
-  تعداد بلاک: 4
+ 
+  اندازه بلاک: 4
+  
+  2-way:
+  
+  ![image](https://github.com/Amirhosseinbayat/ComputerArchitecture-Course/assets/77579794/d2011aec-fb20-4226-a725-cd37181aeaa3)
+
+  
+  
+  4-way:
+  
+![image](https://github.com/Amirhosseinbayat/ComputerArchitecture-Course/assets/77579794/8428531b-4697-4464-be8e-7920f536de6f)
+
+  
+  8-way:
+  
+  ![image](https://github.com/Amirhosseinbayat/ComputerArchitecture-Course/assets/77579794/9f1fee62-913c-4b56-a651-ff2286274021)
+
+  
   
   
   
