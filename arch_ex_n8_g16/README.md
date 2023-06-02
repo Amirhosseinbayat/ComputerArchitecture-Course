@@ -362,8 +362,22 @@ L6:
   
 ### سوال ۴
 
+  الف)
+
+</div>
+
+<div dir="ltr">  
+  
+  ~~~
+  AMAT = ATc + MRc(ATtlb + MRtlb(ATmm) + ATmm + MRmm(AThd))
+  => AMAT = 1 + 0.02( 1 + 0.0005(100) + 100 + 0.000003(1000000) )
+  => AMAT = 3.081 cycles
+  ~~~
+  
+  </div>
 
 
+<div dir="rtl">
 
 
   
