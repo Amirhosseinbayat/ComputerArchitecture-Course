@@ -363,9 +363,32 @@ L6:
 ### سوال ۴
 
   الف)
+  
+  قبل از افزودن TLB:
+  
+</div>
+  
+<div dir="ltr">  
+  
+  ~~~
+  AMAT = ATc + MRc(ATmm + ATmm + MRmm(AThd))
+  => AMAT = 1 + 0.02(100 + 100 + 0.000003(1000000) )
+  => AMAT = 5.06 cycles
+  ~~~
+  
+  </div>
+
+
+<div dir="rtl">
+
+
+  
+  
+  
+  بعد از افزودن TLB:
 
 </div>
-
+  
 <div dir="ltr">  
   
   ~~~
