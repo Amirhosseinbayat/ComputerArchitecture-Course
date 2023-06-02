@@ -71,10 +71,10 @@
      
   | V | Tag | Data | V | Tag | Data |
   | --- | --- | --- | --- | --- | --- |
-  | 1 | (Tag of i in stack) | 0-7 |  | array cell |  |
-  | 1 | (Tag of j in stack) | 0-7 |  | array cell |  |
-  | 1 | (Tag of sum in stack) | 0 |  | array cell |  |
-  |  | array cell |  |  | array cell |  |
+  | 1 | (Tag of i in stack) | 0-7 |  | (Tag of an array cell) |  |
+  | 1 | (Tag of j in stack) | 0-7 |  | (Tag of an array cell) |  |
+  | 1 | (Tag of sum in stack) | 0 |  | (Tag of an array cell) |  |
+  |  | (Tag of an array cell) |  |  | (Tag of an array cell) |  |
   
   </div>
   
@@ -118,10 +118,10 @@ hits= 8 + 8 + 64*8 = 528
    
   | V | Tag | Data | V | Tag | Data |
   | --- | --- | --- | --- | --- | --- |
-  | 1 | (Tag of i in stack) | 0 | 1 | array cell[7][4] | 12 |
-  | 1 | (Tag of j in stack) | 0 | 1 | array cell[7][5] | 13 |
-  | 1 | array cell[7][2] | 10 | 1 | array cell[7][6] | 14 |
-  | 1 | array cell[7][3] | 11 | 1 | array cell[7][7] | 15 |
+  | 1 | (Tag of i in stack) | 0 | 1 | (Tag of array cell[7][4]) | 12 |
+  | 1 | (Tag of j in stack) | 0 | 1 | (Tag of array cell[7][5]) | 13 |
+  | 1 | (Tag of array cell[7][2]) | 10 | 1 | (Tag of array cell[7][6]) | 14 |
+  | 1 | (Tag of array cell[7][3]) | 11 | 1 | (Tag of array cell[7][7]) | 15 |
   </div>
    
   
