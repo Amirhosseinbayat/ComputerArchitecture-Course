@@ -260,9 +260,24 @@ main:
     
 <div dir="rtl">
 
+الف)
+  اندازه بلاک 4 bytes:
 
+  ![image](https://github.com/Amirhosseinbayat/ComputerArchitecture-Course/assets/77579794/d76ddd02-906e-4862-a3a8-5fe2ae63dfc2)
 
+  
+  
+  اندازه بلاک 8 bytes:
+  
+  ![image](https://github.com/Amirhosseinbayat/ComputerArchitecture-Course/assets/77579794/0d00cb67-87f3-4d26-b691-31bff70a5ed2)
 
+  
+
+  اندازه بلاک 16 bytes:
+![image](https://github.com/Amirhosseinbayat/ComputerArchitecture-Course/assets/77579794/6617c0e7-a869-48ca-9a66-42d35fee9c81)
+
+  
+  
 ### سوال ۴
 
 
