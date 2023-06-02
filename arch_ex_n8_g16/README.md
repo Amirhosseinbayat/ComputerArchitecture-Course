@@ -60,6 +60,7 @@
   د) بررسی تعداد و نرخ hit و miss:
   
    <div dir="ltr"> 
+     
   ~~~
   int i,j,sum=0;
 
@@ -100,13 +101,14 @@
   ~~~
   
    => 
+   
  ~~~
 hits= 8 + 8 + 64*8 = 528  
  ~~~
    
-   ---
+ ---
    
-     ~~~
+  ~~~
   for (i=0 ; i < SIZE ; i++)
         for (j=0 ; j < SIZE ; j++)
             sum+=  array[i][j];
