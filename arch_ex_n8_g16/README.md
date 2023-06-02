@@ -261,6 +261,7 @@ main:
 <div dir="rtl">
 
 الف)
+  هر word = ۴ bytes
   اندازه بلاک 4 bytes:
 
 ![image](https://github.com/Amirhosseinbayat/ComputerArchitecture-Course/assets/77579794/ba7bfec6-a538-48a1-b83e-295ab8e6129f)
@@ -279,6 +280,11 @@ main:
   ![image](https://github.com/Amirhosseinbayat/ComputerArchitecture-Course/assets/77579794/d0baef42-a521-41f0-be91-46f7fc0302da)
 
   اما در نقطه مقابل در افزایش بعدی اندازه بلاک, همان طور که در نمودار بالا قابل مشاهده است, این افزایش موجب افزایش **Conflict miss** ها خواهد شد. در نتیجه بهره‌وری کمتری از فضای حافظه نهان در اندازه بلاک ۱۶ برده‌ایم.
+  
+  
+  ب) 
+  ظرفیت: 16*4 bytes
+  تعداد بلاک: 4
   
   
   
