@@ -163,15 +163,203 @@ miss rate = 9.53 %
   
   
   </div>
+  
+    
+  
+<div dir="rtl">
 
 
 
 ### سوال ۳
 
+کد اسمبلی ( با استفاده از ابزار https://godbolt.org ) :
+  
+  
+  </div>
+  
+  
+  <div dir="ltr">
+    
+~~~
+    
+    
+main:
+        addi    sp,sp,-288
+        sw      s0,284(sp)
+        addi    s0,sp,288
+        sw      zero,-28(s0)
+        sw      zero,-20(s0)
+        j       L2
+L5:
+        sw      zero,-24(s0)
+        j       L3
+L4:
+        lw      a4,-20(s0)
+        lw      a5,-24(s0)
+        add     a5,a4,a5
+        addi    a4,a5,1
+        lw      a5,-20(s0)
+        slli    a3,a5,3
+        lw      a5,-24(s0)
+        add     a5,a3,a5
+        slli    a5,a5,2
+        addi    a5,a5,-16
+        add     a5,a5,s0
+        sw      a4,-268(a5)
+        lw      a5,-24(s0)
+        addi    a5,a5,1
+        sw      a5,-24(s0)
+L3:
+        lw      a4,-24(s0)
+        li      a5,7
+        ble     a4,a5,L4
+        lw      a5,-20(s0)
+        addi    a5,a5,1
+        sw      a5,-20(s0)
+L2:
+        lw      a4,-20(s0)
+        li      a5,7
+        ble     a4,a5,L5
+        sw      zero,-20(s0)
+        j       L6
+L9:
+        sw      zero,-24(s0)
+        j       L7
+L8:
+        lw      a5,-20(s0)
+        slli    a4,a5,3
+        lw      a5,-24(s0)
+        add     a5,a4,a5
+        slli    a5,a5,2
+        addi    a5,a5,-16
+        add     a5,a5,s0
+        lw      a5,-268(a5)
+        lw      a4,-28(s0)
+        add     a5,a4,a5
+        sw      a5,-28(s0)
+        lw      a5,-24(s0)
+        addi    a5,a5,1
+        sw      a5,-24(s0)
+L7:
+        lw      a4,-24(s0)
+        li      a5,7
+        ble     a4,a5,L8
+        lw      a5,-20(s0)
+        addi    a5,a5,1
+        sw      a5,-20(s0)
+L6:
+        lw      a4,-20(s0)
+        li      a5,7
+        ble     a4,a5,L9
+        li      a5,0
+        mv      a0,a5
+        lw      s0,284(sp)
+        addi    sp,sp,288
+        #jr      ra
+        
+~~~
+    
+    
+  </div>
+  
+    
+<div dir="rtl">
 
+الف)
+  هر word = ۴ bytes
+  
+  اندازه بلاک 4 bytes:
 
+![image](https://github.com/Amirhosseinbayat/ComputerArchitecture-Course/assets/77579794/ba7bfec6-a538-48a1-b83e-295ab8e6129f)
+  
+  
+  اندازه بلاک 8 bytes:
+  ![image](https://github.com/Amirhosseinbayat/ComputerArchitecture-Course/assets/77579794/8bd3022b-1caa-4b43-bd95-7b4a11008ce0)
 
+  
 
+  اندازه بلاک 16 bytes:
+![image](https://github.com/Amirhosseinbayat/ComputerArchitecture-Course/assets/77579794/6ff8ba6e-1a7f-4ab4-9687-6664e09333c2)
+
+  با افزایش اندازه بلاک‌ها نرخ miss تا حدی کاهش می‌یابد چرا که با این روش از **هم‌محلیت فضایی** بهتر استفاده میکنیم  چرا که پیمایش آرایه عمده کار این کد می‌باشد و بدین ترتیب موجب کاهش تعداد **Compulsory miss** ها میشویم. این مورد در افزایش اندازه بلاک از ۴ به ۸ قابل مشاهده است. 
+  
+  ![image](https://github.com/Amirhosseinbayat/ComputerArchitecture-Course/assets/77579794/d0baef42-a521-41f0-be91-46f7fc0302da)
+
+  اما در نقطه مقابل در افزایش بعدی اندازه بلاک, همان طور که در نمودار بالا قابل مشاهده است, این افزایش موجب افزایش **Conflict miss** ها خواهد شد. در نتیجه بهره‌وری کمتری از فضای حافظه نهان در اندازه بلاک ۱۶ برده‌ایم.
+  
+  
+ </div>
+   
+  
+<div dir="ltr">
+     
+  | b | Hit rate |
+  | --- | --- |
+  | 4 | 84.43 % |
+  | 8 | 87.49 % |
+  | 16 | 87.13 % |
+  
+</div>
+   
+  
+<div dir="rtl">
+  
+  
+  ب) 
+  
+  ظرفیت: 16*4 bytes
+ 
+  اندازه بلاک: 4
+  </div>
+  
+  
+  <div dir="ltr">
+  
+  2-way:
+  
+  ![image](https://github.com/Amirhosseinbayat/ComputerArchitecture-Course/assets/77579794/d2011aec-fb20-4226-a725-cd37181aeaa3)
+
+  
+  
+  4-way:
+  
+  
+  ![image](https://github.com/Amirhosseinbayat/ComputerArchitecture-Course/assets/77579794/9f1fee62-913c-4b56-a651-ff2286274021)
+  
+
+  
+  8-way:
+  
+![image](https://github.com/Amirhosseinbayat/ComputerArchitecture-Course/assets/77579794/755f2776-f6ee-4ebf-a453-d2e5fa2a6737)
+  
+    
+  </div>
+  
+  
+  <div dir="rtl">
+  
+  
+  با افزایش درجه associativity می‌توان miss هایی از جنس **conflict** را پوشش داد. اما ظاهرا در مورد این کد, افزایش این درجه تاثیری چندانی روی بهبود نرخ miss ندارد چرا که miss هایی که از جنس conflict بوده‌اند در مرحله اول مهاجرت از نگاشت مستقیم برطرف شده و سایز فعلی حافظه نهان با افزایش درجه associativity نمی‌تواند کمکی به اجرای سریع‌تر برنامه کند. 
+  
+
+ </div>
+   
+  
+<div dir="ltr">
+     
+  | N | Hit rate |
+  | --- | --- |
+  | 2 | 87.94 % |
+  | 4 | 84.94 % |
+  | 8 | 87.94 % |
+  
+</div>
+   
+  
+<div dir="rtl">    
+    
+    
+  
 ### سوال ۴
 
 
