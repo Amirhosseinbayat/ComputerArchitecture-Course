@@ -39,7 +39,7 @@
 | microinstruction name | alucontrol[2:0] | immsrc[1:0] | alusrcb[1:0]| alusrca[1:0] | resultsrc[1:0] | adrsrc | irwrite | memwrite | regwrite | pcwrite | partial CW |
 | ---                   |            ---  |      ---    |     ---     |         ---  |           ---  |    --- |      ---| ---      |     ---  |    ---  |    ---     |
 | 0 (Fetch)             |      000        |   00        |     10      |   00         |       10       |    0   |    1    |    0     |   0      |   1     |            | 
-| 1 (Decode)            |              |           |           |            |              |       |        |         |         |        |            |
+| 1 (Decode)            |      000        |   00        |     01      |   01         |       00       |    0   |    0    |    0     |   0      |   0     |            |
 | 2 (MemAdr)            |              |           |           |            |              |       |        |         |         |        |            |
 | 3 (MemRead)           |              |           |           |            |              |       |        |         |         |        |            |
 | 4 (MemWB)             |              |           |           |            |              |       |        |         |         |        |            |
