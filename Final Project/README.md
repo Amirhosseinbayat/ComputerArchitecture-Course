@@ -10,6 +10,10 @@
 شکل ۷.۲۷ شکل کامل پردازنده چند سیکل:
 ![image](https://github.com/Amirhosseinbayat/ComputerArchitecture-Course/assets/77579794/af68b3a4-5dc4-450a-86bb-c08271573103)
 
+شکل ۷.۲۸ واحد کنترل چند سیکل: 
+![image](https://github.com/Amirhosseinbayat/ComputerArchitecture-Course/assets/77579794/e4f673ab-4351-4f8e-b452-59e4e0f9703e)
+
+
 شکل ۷.۴۵ FSM واحد کنترل:
 
 ![image](https://github.com/Amirhosseinbayat/ComputerArchitecture-Course/assets/77579794/73fca2a6-e5c1-46c5-ad43-7a77ed286151)
