@@ -22,6 +22,9 @@
 شکل ۷.۶۳ مربوط به به پردازنده تک سیکل:
 ![image](https://github.com/Amirhosseinbayat/ComputerArchitecture-Course/assets/77579794/55f267a7-2a48-4516-a4e9-4495cea652b5)
 
+شکل ۱۹.۱۵ کارکرد کنترل ریزبرنامه‌ای:
+![image](https://github.com/Amirhosseinbayat/ComputerArchitecture-Course/assets/77579794/c426f468-eaa9-4b93-8641-28b97e7d6875)
+
 
 </div>
 
