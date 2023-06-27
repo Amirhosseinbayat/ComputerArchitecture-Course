@@ -15,6 +15,9 @@
 ![image](https://github.com/Amirhosseinbayat/ComputerArchitecture-Course/assets/77579794/73fca2a6-e5c1-46c5-ad43-7a77ed286151)
 ![image](https://github.com/Amirhosseinbayat/ComputerArchitecture-Course/assets/77579794/4f895490-f93e-412c-acae-77abd7da332a)
 
+شکل ۷.۶۳ مربوط به به پردازنده تک سیکل:
+![image](https://github.com/Amirhosseinbayat/ComputerArchitecture-Course/assets/77579794/55f267a7-2a48-4516-a4e9-4495cea652b5)
+
 
 </div>
 
