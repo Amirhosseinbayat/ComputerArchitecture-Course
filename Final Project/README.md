@@ -28,6 +28,9 @@
 جداول:
 ![image](https://github.com/Amirhosseinbayat/ComputerArchitecture-Course/assets/77579794/3461312f-a874-4e48-8e8c-febec3853a49)
 
+شکل ۱۹.۱۲ استالینگز قالب ریزدستورالعمل‌های افقی:
+![image](https://github.com/Amirhosseinbayat/ComputerArchitecture-Course/assets/77579794/961ef9dc-c469-4548-a58e-9b160e899ee3)
+
 
 </div>
 
