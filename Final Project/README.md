@@ -35,4 +35,19 @@
 </div>
 
 <div dir="ltr">  
+
+| microinstruction name | alucontrol[2:0] | immsrc[1:0] | alusrcb[1:0]| alusrca[1:0] | resultsrc[1:0] | adrsrc | irwrite | memwrite | regwrite | pcwrite | partiac CW |
+| ---                   |            ---  |      ---    |     ---     |         ---  |           ---  |    --- |      ---| ---      |     ---  |    ---  |    ---     |
+| 0 (Fetch)             |              |           |           |            |              |       |        |         |         |        |            | 
+| 1 (Decode)            |              |           |           |            |              |       |        |         |         |        |            |
+| 2 (MemAdr)            |              |           |           |            |              |       |        |         |         |        |            |
+| 3 (MemRead)           |              |           |           |            |              |       |        |         |         |        |            |
+| 4 (MemWB)             |              |           |           |            |              |       |        |         |         |        |            |
+| 5 (MemWrite)          |              |           |           |            |              |       |        |         |         |        |            |
+| 6 (ExecuteR)          |              |           |           |            |              |       |        |         |         |        |            |
+| 7 (ALUWB)             |              |           |           |            |              |       |        |         |         |        |            |
+| 8 (ExecuteI)          |              |           |           |            |              |       |        |         |         |        |            |
+| 9 (JAL)               |              |           |           |            |              |       |        |         |         |        |            |
+| 10 (BEQ)              |              |           |           |            |              |       |        |         |         |        |            |
   
+</div>
