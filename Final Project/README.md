@@ -36,9 +36,9 @@
 
 <div dir="ltr">  
 
-| microinstruction name | alucontrol[2:0] | immsrc[1:0] | alusrcb[1:0]| alusrca[1:0] | resultsrc[1:0] | adrsrc | irwrite | memwrite | regwrite | pcwrite | partiac CW |
+| microinstruction name | alucontrol[2:0] | immsrc[1:0] | alusrcb[1:0]| alusrca[1:0] | resultsrc[1:0] | adrsrc | irwrite | memwrite | regwrite | pcwrite | partial CW |
 | ---                   |            ---  |      ---    |     ---     |         ---  |           ---  |    --- |      ---| ---      |     ---  |    ---  |    ---     |
-| 0 (Fetch)             |      000        |   00        |     10      |   00         |       10       |    0   |    0    |    1     |   0      |   0     |  1          | 
+| 0 (Fetch)             |      000        |   00        |     10      |   00         |       10       |    0   |    1    |    0     |   0      |   1     |            | 
 | 1 (Decode)            |              |           |           |            |              |       |        |         |         |        |            |
 | 2 (MemAdr)            |              |           |           |            |              |       |        |         |         |        |            |
 | 3 (MemRead)           |              |           |           |            |              |       |        |         |         |        |            |
