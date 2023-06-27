@@ -25,6 +25,9 @@
 شکل ۱۹.۱۵ کارکرد کنترل ریزبرنامه‌ای:
 ![image](https://github.com/Amirhosseinbayat/ComputerArchitecture-Course/assets/77579794/c426f468-eaa9-4b93-8641-28b97e7d6875)
 
+جداول:
+![image](https://github.com/Amirhosseinbayat/ComputerArchitecture-Course/assets/77579794/3461312f-a874-4e48-8e8c-febec3853a49)
+
 
 </div>
 
